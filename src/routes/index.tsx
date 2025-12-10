@@ -33,9 +33,8 @@ function App() {
 						I am an engineer interested in how things work—whether that's a
 						mechanical assembly, a software pipeline, or a musical composition.
 						<br />
-						<br />I started coding as a teenager, but I am currently focused on
-						rigorous engineering at Tufts University. I've spent my summer
-						scaling AI infrastructure & bug squashing at Delphi.
+						<br />I study computer science at Tufts University. I've spent my
+						summer scaling AI infrastructure & bug squashing at Delphi.
 						<br />
 						<br />I am obsessed with autonomy, aesthetics, and efficiency. I
 						build things to learn how they break, then I build them again.

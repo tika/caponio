@@ -146,14 +146,23 @@ export function NowPlaying() {
 				).url
 			: null;
 
+	// Truncate text if too long
+	const truncateText = (text: string, maxLength: number) => {
+		if (text.length <= maxLength) return text;
+		return `${text.slice(0, maxLength)}...`;
+	};
+
+	const displayTitle = truncateText(track.name, 40);
+	const displayArtists = truncateText(artistNames, 50);
+
 	return (
-		<div className="flex items-center h-full text-right gap-4 ">
-			<div className="flex-1 flex flex-col gap-1 min-w-0">
+		<div className="flex items-center h-full text-right gap-4 w-[40vw] md:w-[22vw] lg:w-[30vw]">
+			<div className="flex-1 flex flex-col gap-1 min-w-0 max-w-full">
 				<p className="text-white text-sm md:text-base leading-tight truncate">
-					{track.name}
+					{displayTitle}
 				</p>
 				<p className="text-white font-bold leading-tight truncate">
-					{artistNames}
+					{displayArtists}
 				</p>
 			</div>
 			{albumArtUrl && (
