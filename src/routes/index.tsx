@@ -61,7 +61,7 @@ function App() {
 						>
 							LinkedIn
 						</a>
-						<a href="https://github.com/tikacapon" className="hover:underline">
+						<a href="https://github.com/tika" className="hover:underline">
 							GitHub
 						</a>
 					</div>
