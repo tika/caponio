@@ -19,7 +19,7 @@ function App() {
 			noisePatternSize={130}
 			noisePatternRefreshInterval={2}
 		>
-			<div className="px-[10vw] md:px-[25vw] py-[5vh] text-white min-h-screen flex justify-center items-center">
+			<div className="px-[10vw] md:px-[25vw] py-[5vh] text-white flex justify-center items-center min-h-screen">
 				<div className="flex flex-col gap-6">
 					<div className="flex items-center justify-between">
 						<div>
