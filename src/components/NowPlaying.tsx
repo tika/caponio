@@ -17,7 +17,7 @@ export function NowPlaying() {
 	const spotify = data.spotify;
 	const song = spotify.song;
 	const artist = spotify.artist;
-	const albumArt = (spotify as any).album_art || (spotify as any).albumArt;
+	const albumArt = (spotify as any).album_art_url;
 
 	if (!song || !artist) {
 		return null;
