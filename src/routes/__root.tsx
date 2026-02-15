@@ -4,6 +4,9 @@ import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 
 import appCss from "../styles.css?url";
 
+const siteUrl = import.meta.env.VITE_SITE_URL ?? "";
+const ogImage = siteUrl ? `${siteUrl}/opengraph-image.png` : "/opengraph-image.png";
+
 export const Route = createRootRoute({
 	head: () => ({
 		meta: [
@@ -18,6 +21,16 @@ export const Route = createRootRoute({
 				title: "Tika Capon",
 				description: "Product Architect & Engineer",
 			},
+			// Open Graph
+			{ property: "og:title", content: "Tika Capon" },
+			{ property: "og:description", content: "Product Architect & Engineer" },
+			{ property: "og:image", content: ogImage },
+			{ property: "og:type", content: "website" },
+			// Twitter Card
+			{ name: "twitter:card", content: "summary_large_image" },
+			{ name: "twitter:title", content: "Tika Capon" },
+			{ name: "twitter:description", content: "Product Architect & Engineer" },
+			{ name: "twitter:image", content: ogImage },
 		],
 		links: [
 			{
