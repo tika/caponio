@@ -12,6 +12,10 @@
     "check": "biome check"
   },
   "dependencies": {
+    "@interfere/constants": "file:./vendor/interfere/interfere-constants-9.0.0.tgz",
+    "@interfere/types": "file:./vendor/interfere/interfere-types-9.0.0.tgz",
+    "@interfere/react": "file:./vendor/interfere/interfere-react-10.0.0-canary.0.tgz",
+    "@interfere/vite": "file:./vendor/interfere/interfere-vite-0.1.2.tgz",
     "@tailwindcss/vite": "^4.0.6",
     "@tanstack/react-devtools": "^0.7.0",
     "@tanstack/react-router": "^1.132.0",
@@ -46,5 +50,13 @@
     "vitest": "^3.0.5",
     "web-vitals": "^5.1.0"
   },
-  "packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c"
+  "packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c",
+  "pnpm": {
+    "overrides": {
+      "@interfere/constants": "file:./vendor/interfere/interfere-constants-9.0.0.tgz",
+      "@interfere/types": "file:./vendor/interfere/interfere-types-9.0.0.tgz",
+      "@interfere/react": "file:./vendor/interfere/interfere-react-10.0.0-canary.0.tgz",
+      "@interfere/vite": "file:./vendor/interfere/interfere-vite-0.1.2.tgz"
+    }
+  }
 }
