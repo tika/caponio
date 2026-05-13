@@ -8,9 +8,12 @@ import { nitro } from 'nitro/vite'
 import { interfere } from '@interfere/vite/plugin'
 
 const config = defineConfig({
+  build: {
+    sourcemap: true,
+  },
   plugins: [
     devtools(),
-    nitro(),
+    nitro({sourcemap: true}),
     // this is the plugin that enables path aliases
     viteTsConfigPaths({
       projects: ['./tsconfig.json'],
