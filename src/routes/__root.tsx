@@ -1,5 +1,5 @@
 import { ErrorBoundary } from "@interfere/react/error-boundary";
-import { InterfereProvider } from "@interfere/react/provider";
+import { InterfereProvider } from "@interfere/vite/provider";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";

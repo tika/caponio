@@ -5,9 +5,7 @@ import { init } from "@interfere/vite/init";
 import { routeTree } from "./routeTree.gen";
 
 if (typeof window !== "undefined") {
-	// @ts-expect-error injected global read by @interfere/react config
-	globalThis.__INTERFERE_PUBLIC_KEY__ = import.meta.env.VITE_INTERFERE_PUBLIC_KEY;
-	init({ enabled: true });
+	init();
 }
 
 // Create a new router instance
