@@ -541,7 +541,7 @@ packages:
     version: 9.0.2
 
   '@interfere/vite@file:vendor/interfere/interfere-vite-0.1.2.tgz':
-    resolution: {integrity: sha512-mYzcMwm8ZFL/gVzY36bF140Scp9/slVD34lv/d1xXBV3TU7EIeoCclrj5x9i6DEn4eoMdgbFnWQoTmnnraflCg==, tarball: file:vendor/interfere/interfere-vite-0.1.2.tgz}
+    resolution: {integrity: sha512-g48Jwd5Zvq57zSqYtNC+rZVC5g3ta7kWr7dXl9VdUhWu909mRUBo8XBewHKEggDvWNOB+z8BhhEXMv2KhXwm2A==, tarball: file:vendor/interfere/interfere-vite-0.1.2.tgz}
     version: 0.1.2
     peerDependencies:
       react: ^19.2.6
