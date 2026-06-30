@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@interfere/react": "11.0.0-canary.5",
+    "@interfere/types": "9.0.3-canary.4",
     "@interfere/vite": "11.0.0-canary.5",
     "@tailwindcss/vite": "^4.0.6",
     "@tanstack/react-devtools": "^0.7.0",

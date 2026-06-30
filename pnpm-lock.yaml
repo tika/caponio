@@ -11,6 +11,9 @@ importers:
       '@interfere/react':
         specifier: 11.0.0-canary.5
         version: 11.0.0-canary.5(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(zone.js@0.16.2)
+      '@interfere/types':
+        specifier: 9.0.3-canary.4
+        version: 9.0.3-canary.4
       '@interfere/vite':
         specifier: 11.0.0-canary.5
         version: 11.0.0-canary.5(@tanstack/react-start@1.167.65(crossws@0.4.5(srvx@0.11.15))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vite@8.0.13(@types/node@22.19.18)(esbuild@0.27.7)(jiti@2.7.0)))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vite@8.0.13(@types/node@22.19.18)(esbuild@0.27.7)(jiti@2.7.0))(zone.js@0.16.2)
@@ -512,8 +515,8 @@ packages:
   '@interfere/sdk@11.0.0-canary.5':
     resolution: {integrity: sha512-2xE+2L4ZpS9sQ7vDsfJq+9EdgSYdHuIrKqf1bjqm/FrF2EpbTTV9cQ4CLBF8CBvceuL2SEj8PcvEDCISSBShAg==}
 
-  '@interfere/types@9.0.3-canary.2':
-    resolution: {integrity: sha512-jNwvIle6sEsHVTs7gM+4/OoKqOm12iPRPE2J7s7rdz75nvrhdIhu00aHUKqSHkLjOXMp/pTp7u1tH035VNVY9Q==}
+  '@interfere/types@9.0.3-canary.4':
+    resolution: {integrity: sha512-JGYwgYLRbTvyihA1h2C0tt1m6wZGxj2vtugitJfbLj1weJbQ/Ewsh5+luSynxt314EvhydGUCkuqN6Y1kHHzUA==}
 
   '@interfere/vite@11.0.0-canary.5':
     resolution: {integrity: sha512-EtjzpmG/vq3yk4hezi4XyvYrmh/SePrxpiwZPG6wL/RwmEwaejyYtERoixk5UR8VNgnN3t9OwCn/SYtppjnMQg==}
@@ -3017,7 +3020,7 @@ snapshots:
     dependencies:
       '@fingerprintjs/fingerprintjs': 5.2.0
       '@interfere/constants': 9.0.2-canary.0
-      '@interfere/types': 9.0.3-canary.2
+      '@interfere/types': 9.0.3-canary.4
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/api-logs': 0.219.0
       '@opentelemetry/context-zone': 2.7.1(@opentelemetry/api@1.9.1)
@@ -3053,7 +3056,7 @@ snapshots:
     dependencies:
       zod: 4.4.3
 
-  '@interfere/types@9.0.3-canary.2':
+  '@interfere/types@9.0.3-canary.4':
     dependencies:
       zod: 4.4.3
 
@@ -3063,7 +3066,7 @@ snapshots:
       '@interfere/helpers': 9.0.0
       '@interfere/react': 11.0.0-canary.5(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(zone.js@0.16.2)
       '@interfere/sdk': 11.0.0-canary.5
-      '@interfere/types': 9.0.3-canary.2
+      '@interfere/types': 9.0.3-canary.4
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/api-logs': 0.219.0
       '@opentelemetry/baggage-span-processor': 0.5.0(@opentelemetry/api@1.9.1)
