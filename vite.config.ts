@@ -21,7 +21,7 @@ const config = defineConfig({
     tailwindcss(),
     tanstackStart(),
     viteReact(),
-    interfere(),
+    interfere({ mode: 'proxy' }),
   ],
 })
 

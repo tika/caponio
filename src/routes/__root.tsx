@@ -1,6 +1,6 @@
 import { ErrorBoundary } from "@interfere/react/error-boundary";
 import { InterfereProvider } from "@interfere/react/provider";
-import { traceMeta } from "@interfere/vite/tanstack-start";
+
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
@@ -9,7 +9,6 @@ import appCss from "../styles.css?url";
 export const Route = createRootRoute({
 	head: () => ({
 		meta: [
-			...traceMeta(),
 			{
 				charSet: "utf-8",
 			},
@@ -31,7 +30,6 @@ export const Route = createRootRoute({
 			{ name: "twitter:title", content: "Tika Capon" },
 			{ name: "twitter:description", content: "Product Architect & Engineer" },
 			{ name: "twitter:image", content: "/opengraph-image.png" },
-			...traceMeta(),
 		],
 		links: [
 			{
