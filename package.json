@@ -12,8 +12,8 @@
     "check": "biome check"
   },
   "dependencies": {
-    "@interfere/react": "canary",
-    "@interfere/vite": "canary",
+    "@interfere/react": "11.0.0-canary.5",
+    "@interfere/vite": "11.0.0-canary.5",
     "@tailwindcss/vite": "^4.0.6",
     "@tanstack/react-devtools": "^0.7.0",
     "@tanstack/react-router": "^1.169.2",
