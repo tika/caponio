@@ -1,5 +1,5 @@
 import { ErrorBoundary } from "@interfere/react/error-boundary";
-import { InterfereProvider } from "@interfere/vite/provider";
+import { InterfereProvider } from "@interfere/react/provider";
 import { traceMeta } from "@interfere/vite/tanstack-start";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
@@ -9,6 +9,7 @@ import appCss from "../styles.css?url";
 export const Route = createRootRoute({
 	head: () => ({
 		meta: [
+			...traceMeta(),
 			{
 				charSet: "utf-8",
 			},
