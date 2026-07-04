@@ -1,5 +1,5 @@
-import { createRouter } from "@tanstack/react-router";
 import { init } from "@interfere/vite/init";
+import { createRouter } from "@tanstack/react-router";
 
 // Import the generated route tree
 import { routeTree } from "./routeTree.gen";

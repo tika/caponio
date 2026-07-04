@@ -1,12 +1,20 @@
-import { useLanyard } from "use-lanyard";
+import { type Types, useLanyard } from "use-lanyard";
+
+function isDiscordSnowflake(value: string): value is Types.Snowflake {
+	return /^\d+$/.test(value);
+}
 
 export function NowPlaying() {
 	const discordId = import.meta.env.VITE_DISCORD_ID;
 
-	if (!discordId) {
+	if (!discordId || !isDiscordSnowflake(discordId)) {
 		return null;
 	}
 
+	return <NowPlayingDetails discordId={discordId} />;
+}
+
+function NowPlayingDetails({ discordId }: { discordId: Types.Snowflake }) {
 	const { data } = useLanyard(discordId);
 
 	// Only show when listening to Spotify and spotify data exists
@@ -17,7 +25,7 @@ export function NowPlaying() {
 	const spotify = data.spotify;
 	const song = spotify.song;
 	const artist = spotify.artist;
-	const albumArt = (spotify as any).album_art_url;
+	const albumArt = spotify.album_art_url;
 
 	if (!song || !artist) {
 		return null;
