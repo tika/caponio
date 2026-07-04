@@ -54,17 +54,13 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 					crossOrigin="anonymous"
 				/>
 				<link
-					href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap"
+					href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
 					rel="stylesheet"
 					crossOrigin="anonymous"
 				/>
 				<script
 					type="text/javascript"
 					src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.34/dist/unicornStudio.umd.js"
-				/>
-				<link
-					href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap"
-					rel="stylesheet"
 				/>
 			</head>
 			<body className="min-h-screen">
